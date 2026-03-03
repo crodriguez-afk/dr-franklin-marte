@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+    --color-primary: #0794ff;
+    --color-primary-hover: #0578d3;
+    --color-text-dark: #003b99;
+    --color-accent: #d1efff;
+    --color-light-bg: #f8fbfc;
+}
+
+/* Configuración Base:
+   Usamos variables CSS directamente para evitar que el compilador de Astro
+   se queje de que no conoce las utilidades de Tailwind durante el build.
+*/
+@layer base {
+    body {
+        font-family: var(--font-sans);
+        color: var(--color-text-dark);
+        background-color: white;
+        @apply antialiased;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply inline-flex items-center justify-center px-8 py-3.5 rounded-md font-medium transition-all duration-300 shadow-sm;
+        background-color: var(--color-primary);
+        color: white;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--color-primary-hover);
+    }
+
+    .btn-outline {
+        @apply inline-flex items-center justify-center border-2 px-8 py-3.5 rounded-md font-medium transition-all duration-300;
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+    }
+
+    .btn-outline:hover {
+        background-color: var(--color-primary);
+        color: white;
+    }
+
+    .container-custom {
+        @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full;
+    }
+
+    .section-padding {
+        @apply py-16 md:py-24;
+    }
+}
