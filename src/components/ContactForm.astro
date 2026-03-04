@@ -79,8 +79,8 @@
         formData.append("sendTo", "c.rodriguez@caribemedia.com.do");
         formData.append("titleWeb", "Dr. Franklin Marte");
         formData.append("fromEmail", "formularios@caribemedia.com.do");
-        //formData.append("recaptchaToken", recaptchaToken);
-        //formData.append("secret", "6Le_sH4sAAAAANlO837jzLXXjW3sj8CzoKPbXZR5");
+        formData.append("recaptchaToken", recaptchaToken);
+        formData.append("secret", "6Le_sH4sAAAAANlO837jzLXXjW3sj8CzoKPbXZR5");
         formData.append("Fecha", new Date().toISOString().split("T")[0]);
         formData.append("ID", "ID-" + Math.floor(Math.random() * 1000000));
         formData.append("method", "POST");
