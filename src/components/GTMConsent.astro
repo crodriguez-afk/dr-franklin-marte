@@ -1,0 +1,50 @@
+
+<script >
+  (function () {
+    const GTM_ID = "GTM-TN49WM9Q";
+    const KEY = "cookie_consent_gtm"; // "granted" | "denied"
+
+    function loadGTM() {
+      if (window.__gtmLoaded) return;
+      window.__gtmLoaded = true;
+
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+
+      const s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtm.js?id=" + encodeURIComponent(GTM_ID);
+      document.head.appendChild(s);
+    }
+
+    function getConsent() {
+      try { return localStorage.getItem(KEY); } catch { return null; }
+    }
+
+    function setConsent(value) {
+      try { localStorage.setItem(KEY, value); } catch {}
+    }
+
+    // ✅ Exponemos funciones para que el banner las llame
+    window.cookieConsentAccept = function () {
+      setConsent("granted");
+      loadGTM();
+    };
+
+    window.cookieConsentReject = function () {
+      setConsent("denied");
+      // No cargamos GTM
+    };
+
+    window.cookieConsentReset = function () {
+      try { localStorage.removeItem(KEY); } catch {}
+      // opcional: recargar para aplicar
+      // location.reload();
+    };
+
+    // ✅ Auto-cargar GTM si ya aceptó antes
+    document.addEventListener("DOMContentLoaded", () => {
+      if (getConsent() === "granted") loadGTM();
+    });
+  })();
+</script>

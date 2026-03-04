@@ -4,7 +4,9 @@
 import { Icon } from 'astro-icon/components'
 import Instagram from '@/components/icons/Instagram.astro'
 import Facebook from '@/components/icons/Facebook.astro'
-
+import ContactForm from "../components/ContactForm.astro";
+import { ClientRouter } from "astro:transitions";
+import GTMConsent from "../components/GTMConsent.astro";
 ---
 
 
@@ -12,10 +14,72 @@ import Facebook from '@/components/icons/Facebook.astro'
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 	<head>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB27T902DL"
+    >
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-QB27T902DL");
+    </script>
+
+		<!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+		<ClientRouter />
+		<GTMConsent gtmId="GTM-TN49WM9Q" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Regeneración Articular sin Cirugía | Dr. Franklin Marte Ortopeda</title>
-		<meta name="description" content="Tratamientos de regeneración articular sin cirugía para dolor de rodilla, hombro y columna. PRP y factores de crecimiento con el Dr. Franklin Marte. Agenda tu consulta." />
+		<meta name="description" content="Tratamientos de regeneración articular sin cirugía para dolor de rodilla, hombro y columna." />
+
+		<meta
+      name="keywords"
+      content="dr Franklin Marte Gutierrez, Regeneraciones Articulares de hombros, Regeneraciones, Articulares de rodillas, Dolor de columna, Ozonoterapia, dolor de rodilla
+"
+    />
+    <meta name="author" content="Dr. Franklin Marte" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://drfranklinmartegutierrez.com.do/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://drfranklinmartegutierrez.com.do/" />
+    <meta
+      property="og:title"
+      content="Regeneración Articular sin Cirugía | Dr. Franklin Marte Ortopeda"
+    />
+    <meta
+      property="og:description"
+      content="Tratamientos de regeneración articular sin cirugía para dolor de rodilla, hombro y columna. PRP y factores de crecimiento con el Dr. Franklin Marte. Agenda tu consulta."
+    />
+    <meta
+      property="og:image"
+      content="https://drfranklinmartegutierrez.com.do/imagen1.JPG"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_DO" />
+    <meta property="og:site_name" content="Dr. Franklin Marte" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Regeneración Articular sin Cirugía | Dr. Franklin Marte Ortopeda"
+    />
+    <meta
+      name="twitter:description"
+      content="Tratamientos de regeneración articular sin cirugía para dolor de rodilla, hombro y columna. PRP y factores de crecimiento con el Dr. Franklin Marte. Agenda tu consulta."
+    />
+    <meta
+      name="twitter:image"
+      content="https://drfranklinmartegutierrez.com.do/imagen1.JPG"
+    />
 		
 		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +135,7 @@ import Facebook from '@/components/icons/Facebook.astro'
 							</p>
 							<div class="flex flex-col sm:flex-row gap-4">
 								<a href="#agenda" class="btn-primary text-lg px-10 py-4" style="background-color: #0794ff;">Agenda tu Consulta</a>
-								<a href="#tratamientos" class="btn-outline text-lg px-10 py-4" style="border-color: #0794ff; color: #0794ff;">Tratamientos sin Cirugía</a>
+								<a href="#tratamientos" class="btn-outline text-lg px-10 py-4" style="border-color: #0794ff; color: #fffff;">Tratamientos sin Cirugía</a>
 							</div>
 						</div>
 						<div class="relative flex justify-center">
@@ -122,21 +186,21 @@ import Facebook from '@/components/icons/Facebook.astro'
 							<img src="./icon5.svg" alt="Rodilla" class="w-10 h-10 mb-4 object-contain icon-blue" />
 							<h3 class="text-xl font-bold mb-3">Dolor de Rodilla sin Cirugía</h3>
 							<p class="text-sm text-gray-500 mb-6 italic">Tratamiento para desgaste y lesiones.</p>
-							<a href="#detalle-rodilla" class="text-[#0794ff] font-bold text-sm flex items-center gap-2 group-hover:underline">Saber más <i data-lucide="chevron-right" class="w-4 h-4 text-[#0794ff]"></i></a>
+						
 						</div>
 
 						<div class="p-8 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all group">
 							<img src="./icon6.svg" alt="Hombro" class="w-10 h-10 mb-4 object-contain icon-blue" />
 							<h3 class="text-xl font-bold mb-3">Dolor de Hombro sin Cirugía</h3>
 							<p class="text-sm text-gray-500 mb-6 italic">Recupere el rango de movimiento.</p>
-							<a href="#detalle-hombro" class="text-[#0794ff] font-bold text-sm flex items-center gap-2 group-hover:underline">Saber más <i data-lucide="chevron-right" class="w-4 h-4 text-[#0794ff]"></i></a>
+							
 						</div>
 
 						<div class="p-8 bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-xl transition-all group">
 							<img src="./icon7.svg" alt="Columna" class="w-10 h-10 mb-4 object-contain icon-blue" />
 							<h3 class="text-xl font-bold mb-3">Dolor de Columna sin Cirugía</h3>
 							<p class="text-sm text-gray-500 mb-6 italic">Alivio para hernias y dolor lumbar.</p>
-							<a href="#detalle-columna" class="text-[#0794ff] font-bold text-sm flex items-center gap-2 group-hover:underline">Saber más <i data-lucide="chevron-right" class="w-4 h-4 text-[#0794ff]"></i></a>
+							
 						</div>
 					</div>
 				</div>
@@ -306,37 +370,7 @@ import Facebook from '@/components/icons/Facebook.astro'
                         <!-- FORMULARIO INTEGRADO -->
                         <div class="bg-white p-8 md:p-10 rounded-[2rem] shadow-2xl text-[var(--color-text-dark)]">
                             <h3 class="text-2xl font-bold mb-6">Solicitar Información</h3>
-                            <form id="contact-form" class="space-y-4">
-                                <div>
-                                    <label for="name" class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Nombre Completo</label>
-                                    <input type="text" id="name" name="Nombre" placeholder="Ej. Juan Pérez" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0794ff] focus:ring-2 focus:ring-[#0794ff]/10 outline-none transition-all" required />
-                                </div>
-                                
-                                <div class="grid md:grid-cols-2 gap-4">
-                                    <div>
-                                        <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Teléfono</label>
-                                        <input type="tel" id="phone" name="Telefono" placeholder="809-000-0000" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0794ff] focus:ring-2 focus:ring-[#0794ff]/10 outline-none transition-all" required />
-                                    </div>
-                                    <div>
-                                        <label for="service" class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Interés</label>
-                                        <select id="service" name="Interes" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0794ff] focus:ring-2 focus:ring-[#0794ff]/10 outline-none transition-all bg-white">
-                                            <option value="PRP / Regeneración">PRP / Regeneración</option>
-                                            <option value="Dolor de Rodilla">Dolor de Rodilla</option>
-                                            <option value="Dolor de Columna">Dolor de Columna</option>
-                                            <option value="Otro">Otro</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label for="message" class="block text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">Mensaje</label>
-                                    <textarea id="message" name="Mensaje" rows="3" placeholder="Cuéntenos su caso..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#0794ff] focus:ring-2 focus:ring-[#0794ff]/10 outline-none transition-all resize-none"></textarea>
-                                </div>
-
-                                <button type="submit" id="submit-btn" class="w-full py-4 text-lg font-bold shadow-lg text-white rounded-xl transition-transform hover:scale-[1.02] flex justify-center items-center gap-2" style="background-color: #0794ff;">
-                                    Enviar Solicitud
-                                </button>
-                            </form>
+                            <ContactForm />
                         </div>
                     </div>
                 </div>
@@ -364,60 +398,112 @@ import Facebook from '@/components/icons/Facebook.astro'
 
 				
 				
-				<p class="border-t border-white/5 pt-8">&copy; 2026 Todos los derechos reservados.</p>
-			</div>
+<!-- SECCIÓN DE DERECHOS Y LOGOS -->
+                <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-center gap-8">
+                    
+                    <div class="flex items-center gap-6 opacity-40 grayscale brightness-150">
+                        <!-- Logo Asociación integrado -->
+						<a href="https://www.caribemedia.com.do" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform">
+							<img src="/caribe.png" alt="Logo Caribe Media" class="h-8 w-auto object-contain" onerror="this.style.display='none'"/>
+						</a>
+                        <!-- Logo Certificación integrado -->
+<a href="https://paginasamarillas.com.do/es/business/search/republica-dominicana/r/dr-franklin-marte" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition-transform">
+							<img src="/amarillas.webp" alt="Logo Paginas Amarillas" class="h-8 w-auto object-contain" onerror="this.style.display='none'"/>
+						</a>                    </div>
+                </div>
+            </div>
+
+			<div id="popup-root">
+  <div
+    id="popup"
+    class="fixed right-5 bottom-5 z-50 hidden w-[350px] items-center justify-center rounded-2xl bg-linear-to-tr from-zinc-700 via-zinc-800 to-zinc-900 p-2"
+  >
+    <button
+      id="close-btn"
+      class="absolute -top-2 -right-2 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 shadow-lg transition-colors hover:bg-gray-100"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <div class="w-full space-y-3 rounded-xl bg-white p-6">
+      <h3 class="text-2xl font-bold">🍪 Política de Cookies</h3>
+      <p class="text-sm text-neutral-600">
+        Utilizamos cookies para mejorar tu experiencia en nuestro sitio web.
+        Estas nos ayudan a entender cómo usas nuestro sitio y a personalizar el
+        contenido.
+      </p>
+      <div class="space-y-2 text-xs text-neutral-500">
+        <p>
+          <strong>Cookies esenciales:</strong> Necesarias para el funcionamiento básico
+          del sitio.
+        </p>
+        <p>
+          <strong>Cookies analíticas:</strong> Nos ayudan a mejorar el rendimiento
+          del sitio.
+        </p>
+        <p>
+          <strong>Cookies de marketing:</strong> Permiten personalizar anuncios y
+          contenido.
+        </p>
+      </div>
+      <button
+        id="action-btn"
+        class="min-h-[40px] w-full cursor-pointer rounded-md bg-blue-500 font-medium text-white transition-colors hover:bg-blue-600"
+      >
+        Aceptar todas las cookies
+      </button>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  import { animate } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
+
+  const popup = document.getElementById("popup");
+  const closeBtn = document.getElementById("close-btn");
+  const actionBtn = document.getElementById("action-btn");
+
+  let showPopUp = false;
+
+  setTimeout(() => {
+    showPopUp = true;
+    popup.classList.remove("hidden");
+    animate(
+      popup,
+      { opacity: [0, 1], y: [20, 0] },
+      { duration: 0.3, ease: "easeOut" },
+    );
+  }, 1000);
+
+  closeBtn.addEventListener("click", () => {
+    popup.classList.add("hidden");
+    showPopUp = false;
+    // Rechazar cookies y no cargar GTM
+    if (typeof window.cookieConsentReject === 'function') {
+      window.cookieConsentReject();
+    }
+  });
+
+  actionBtn.addEventListener("click", () => {
+    popup.classList.add("hidden");
+    showPopUp = false;
+    // Aceptar cookies y cargar GTM
+    if (typeof window.cookieConsentAccept === 'function') {
+      window.cookieConsentAccept();
+    }
+  });
+</script>
 		</footer>
 
-		<!-- SCRIPTS DE FORMULARIO -->
-        <script src="https://unpkg.com/lucide@latest"></script>
-        <script is:inline>
-            lucide.createIcons();
-
-            const form = document.getElementById('contact-form');
-            const btn = document.getElementById('submit-btn');
-
-            // Cargar reCAPTCHA v3
-            const script = document.createElement('script');
-            script.src = "https://www.google.com/recaptcha/api.js?render=6Le_sH4sAAAAACiSyGX4DGUhGpRDjHFHYr-AY89V";
-            document.head.appendChild(script);
-
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                btn.disabled = true;
-                btn.innerHTML = "Enviando...";
-
-                const formData = new FormData(form);
-                
-                try {
-                    // Token reCAPTCHA
-                    const token = await grecaptcha.execute('6Le_sH4sAAAAACiSyGX4DGUhGpRDjHFHYr-AY89V', {action: 'contact'});
-                    
-                    formData.append("sendTo", "franklingoarbit07@gmail.com");
-                    formData.append("titleWeb", "Dr. Franklin Marte");
-                    formData.append("fromEmail", "formularios@caribemedia.com");
-                    formData.append("recaptchaToken", token);
-                    formData.append("secret", "6Le_sH4sAAAAANlO837jzLXXjW3sj8CzoKPbXZR5");
-                    formData.append("Fecha", new Date().toLocaleDateString());
-                    formData.append("ID", "F-" + Date.now());
-
-                    // Envío a PHP
-                    await fetch("/formSend.php", { method: "POST", body: formData });
-
-                    // Envío a Google Sheets
-                    await fetch("https://script.google.com/macros/s/AKfycbx2fAVRaYjH3UT756CNkLiK2kNbm__9XqU9wXDbZoThT5rBbO3gVADksg9RSSYacuaJ/exec", {
-                        method: "POST",
-                        body: formData
-                    });
-
-                    window.location.href = "/gracias";
-                } catch (err) {
-                    console.error(err);
-                    alert("Ocurrió un error al enviar el mensaje.");
-                    btn.disabled = false;
-                    btn.innerHTML = "Enviar Solicitud";
-                }
-            });
-        </script>
 
 	</body>
 </html>
