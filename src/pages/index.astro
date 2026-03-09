@@ -7,6 +7,7 @@ import Facebook from '@/components/icons/Facebook.astro'
 import ContactForm from "../components/ContactForm.astro";
 import { ClientRouter } from "astro:transitions";
 import GTMConsent from "../components/GTMConsent.astro";
+import WhatsApp from "@/components/WhatsApp.astro"
 ---
 
 
@@ -125,7 +126,7 @@ import GTMConsent from "../components/GTMConsent.astro";
 					<div class="grid lg:grid-cols-2 gap-12 items-center">
 						<div class="z-10">
 							<h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-								Regeneración Articular <span class="text-[#0794ff]">sin Cirugía</span>
+								Regeneración Articular sin Cirugía
 							</h1>
 							<p class="text-xl font-medium text-[#0794ff] mb-4">
 								Tratamientos médicos avanzados para el dolor articular
@@ -153,6 +154,33 @@ import GTMConsent from "../components/GTMConsent.astro";
 									<img src="./icon2.svg" alt="Seguridad" class="w-6 h-6 icon-blue" />
 								</div>
 								<span class="text-sm font-bold">Enfoque No Quirúrgico</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- 🟦 SECCIÓN 3 – DETALLE DE TRATAMIENTOS -->
+			<section id="educativa" class="section-padding bg-[var(--color-light-bg)]">
+				<div class="container-custom">
+					<div class="grid lg:grid-cols-2 gap-8 mb-8">
+						<div id="detalle-prp" class="bg-white p-10 rounded-3xl shadow-sm border border-gray-50">
+							<h2 class="text-2xl font-bold mb-6 flex items-center gap-3"><span class="bg-blue-50 text-[#0794ff] w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">1</span> Regeneración con PRP</h2>
+							<div class="space-y-6 text-gray-700">
+								<div>
+									<h3 class="font-bold text-lg mb-2 italic underline decoration-blue-100">¿Qué es el PRP?</h3>
+									<p class="text-sm">El Plasma Rico en Plaquetas (PRP) es un tratamiento que utiliza componentes de la propia sangre para estimular la reparación natural.</p>
+								</div>
+							</div>
+						</div>
+
+						<div id="detalle-gfc" class="bg-white p-10 rounded-3xl shadow-sm border border-gray-50">
+							<h2 class="text-2xl font-bold mb-6 flex items-center gap-3"><span class="bg-blue-50 text-[#0794ff] w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">2</span> Factores de Crecimiento (GFC)</h2>
+							<div class="space-y-6 text-gray-700">
+								<div>
+									<h3 class="font-bold text-lg mb-2 italic underline decoration-blue-100">¿Qué son los GFC?</h3>
+									<p class="text-sm">Proteínas presentes en el plasma que estimulan la reparación y regeneración de los tejidos dañados.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -206,32 +234,7 @@ import GTMConsent from "../components/GTMConsent.astro";
 				</div>
 			</section>
 
-			<!-- 🟦 SECCIÓN 3 – DETALLE DE TRATAMIENTOS -->
-			<section id="educativa" class="section-padding bg-[var(--color-light-bg)]">
-				<div class="container-custom">
-					<div class="grid lg:grid-cols-2 gap-8 mb-8">
-						<div id="detalle-prp" class="bg-white p-10 rounded-3xl shadow-sm border border-gray-50">
-							<h2 class="text-2xl font-bold mb-6 flex items-center gap-3"><span class="bg-blue-50 text-[#0794ff] w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">1</span> Regeneración con PRP</h2>
-							<div class="space-y-6 text-gray-700">
-								<div>
-									<h3 class="font-bold text-lg mb-2 italic underline decoration-blue-100">¿Qué es el PRP?</h3>
-									<p class="text-sm">El Plasma Rico en Plaquetas (PRP) es un tratamiento que utiliza componentes de la propia sangre para estimular la reparación natural.</p>
-								</div>
-							</div>
-						</div>
-
-						<div id="detalle-gfc" class="bg-white p-10 rounded-3xl shadow-sm border border-gray-50">
-							<h2 class="text-2xl font-bold mb-6 flex items-center gap-3"><span class="bg-blue-50 text-[#0794ff] w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold">2</span> Factores de Crecimiento (GFC)</h2>
-							<div class="space-y-6 text-gray-700">
-								<div>
-									<h3 class="font-bold text-lg mb-2 italic underline decoration-blue-100">¿Qué son los GFC?</h3>
-									<p class="text-sm">Proteínas presentes en el plasma que estimulan la reparación y regeneración de los tejidos dañados.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+			
 
 			<!-- 🟦 SECCIÓN 4 – BENEFICIOS -->
 			<section class="section-padding bg-white">
@@ -395,6 +398,8 @@ import GTMConsent from "../components/GTMConsent.astro";
 						<Instagram />
 					</a>
 				</div>
+
+				<WhatsApp title="Dr. Franklin Marte" phone="809-906-2094" message="Saludos, conocí los servicios del Dr. Franklin Marte a través de su página web y me gustaría agendar una consulta para evaluación de dolor articular."/> 
 
 				
 				
