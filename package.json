@@ -9,10 +9,25 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@iconify-json/mdi": "^1.2.3",
     "@lucide/astro": "^0.576.0",
     "@tailwindcss/vite": "^4.2.1",
     "astro": "^5.17.1",
     "astro-icon": "^1.1.5",
+    "mdi": "^2.2.43",
     "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.0.3",
+    "eslint-config-astro": "^1.0.8",
+    "eslint-plugin-astro": "^1.6.0",
+    "eslint-plugin-astro-standards": "^1.0.6",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "prettier": "3.8.1",
+    "prettier-plugin-astro": "0.14.1",
+    "prettier-plugin-tailwindcss": "0.7.2"
   }
 }

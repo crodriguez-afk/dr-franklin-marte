@@ -1,0 +1,89 @@
+<section class="relative flex min-h-[90vh] items-center overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <style>
+      .slide-bg {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        animation: kenBurnsFade 15s linear infinite;
+      }
+      .slide-1 { background-image: url('./imagen-fondo-1.jpg'); animation-delay: 0s; }
+      .slide-2 { background-image: url('./imagen-fondo-2.jpg'); animation-delay: 5s; }
+      .slide-3 { background-image: url('./imagen-fondo-3.jpg'); animation-delay: 10s; }
+
+      @keyframes kenBurnsFade {
+        0% { opacity: 0; transform: scale(1); }
+        10% { opacity: 1; }
+        33% { opacity: 1; }
+        43% { opacity: 0; }
+        100% { opacity: 0; transform: scale(1.15); }
+      }
+    </style>
+    <div class="slide-bg slide-1"></div>
+    <div class="slide-bg slide-2"></div>
+    <div class="slide-bg slide-3"></div>
+  </div>
+
+  <div class="absolute inset-0 z-[1] bg-slate-950/70 backdrop-blur-[2px]"></div>
+
+  <div class="absolute top-0 right-0 h-[800px] w-[800px] translate-x-1/3 -translate-y-1/2 rounded-full bg-blue-600/20 blur-3xl z-[2]"></div>
+  <div class="absolute bottom-0 left-0 h-[600px] w-[600px] -translate-x-1/4 translate-y-1/3 rounded-full bg-indigo-900/30 blur-3xl z-[2]"></div>
+
+  <div class="container-custom relative z-10 py-16 lg:py-24">
+    <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+      <div class="animate-on-scroll opacity-0-init z-10" data-animation="fade-up">
+        <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-500/10 px-4 py-2 text-sm font-bold text-sky-400">
+          <span class="h-2 w-2 animate-pulse rounded-full bg-sky-400"></span>
+          Medicina regenerativa avanzada
+        </div>
+        
+        <h1 class="mb-6 text-5xl leading-[1.1] font-extrabold tracking-tight text-white md:text-6xl lg:text-7xl">
+          Regeneración articular sin cirugía
+        </h1>
+        
+        <p class="mb-6 text-xl font-medium text-slate-200 md:text-2xl">
+          Tratamientos médicos avanzados para el dolor articular.
+        </p>
+        
+        <p class="mb-10 max-w-xl text-lg leading-relaxed font-light text-slate-300">
+          El dolor de rodilla, hombro o columna no siempre debe terminar en
+          cirugía cuando es evaluado por un especialista con un enfoque
+          médico adecuado. El Dr. Franklin Marte se especializa en
+          alternativas no quirúrgicas orientadas a aliviar el dolor y
+          preservar su movilidad.
+        </p>
+
+        <div class="flex flex-col gap-4 sm:flex-row">
+          <a href="https://api.whatsapp.com/send/?phone=18099062094&text&type=phone_number&app_absent=0" target="_blank" class="flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-sky-500 to-blue-600 px-8 py-4 text-lg font-semibold text-white shadow-lg shadow-sky-500/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-sky-500/40">
+            Agenda tu consulta
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a href="#tratamientos" class="flex items-center justify-center rounded-full border-2 border-slate-700 bg-slate-900/50 px-8 py-4 text-lg font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-sky-400 hover:text-sky-400">
+            Tratamientos sin cirugía
+          </a>
+        </div>
+      </div>
+
+      <div class="animate-on-scroll opacity-0-init relative flex justify-center lg:justify-end" data-animation="fade-left">
+        <div class="animate-float relative z-10 aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2rem] border-8 border-slate-800 bg-slate-900 shadow-2xl shadow-black/50">
+          <img src="./imagen1.JPG" alt="Imagen Principal: Dr. Franklin Marte" class="block h-full w-full object-cover transition-transform duration-700 hover:scale-105" />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
+        </div>
+
+        <div class="animate-float absolute -bottom-8 left-4 z-20 flex items-center gap-4 rounded-2xl border border-slate-700 bg-slate-900/90 p-5 shadow-xl backdrop-blur-md lg:-left-12" style="animation-delay: 1s;">
+          <div class="rounded-full bg-sky-500/20 p-3">
+            <img src="./icon2.svg" alt="Seguridad" class="h-8 w-8 brightness-0 invert-[0.5] sepia-[1] saturate-[10000%] hue-rotate-[170deg]" />
+          </div>
+          <div class="flex flex-col">
+            <span class="text-sm font-medium text-slate-400">Enfoque 100%</span>
+            <span class="text-lg font-extrabold text-white">no quirúrgico</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,228 @@
+---
+import Instagram from "@/components/icons/Instagram.astro";
+import Facebook from "@/components/icons/Facebook.astro";
+import WhatsApp from "@/components/WhatsApp.astro";
+---
+
+<footer
+  class="border-t border-slate-800 bg-[#0f172a] py-20 text-center text-sm text-slate-400"
+>
+  <div class="container-custom">
+    <div
+      class="mx-auto mb-8 flex h-16 w-16 items-center justify-center rounded-2xl border border-slate-700 bg-slate-800 shadow-inner"
+    >
+      <img
+        src="./icon1-01.svg"
+        alt="Logo"
+        class="icon-blue h-8 w-8 opacity-50"
+      />
+    </div>
+    <p class="mb-2 text-lg font-bold text-slate-200">
+      Dr. Franklin Marte – Médico Ortopeda
+    </p>
+    <p
+      class="mb-10 text-[11px] font-bold tracking-[0.4em] text-blue-500 uppercase"
+    >
+      Especialista en Regeneración Articular
+    </p>
+
+    <div class="mb-16 flex items-center justify-center gap-6">
+      <a
+        href="https://www.facebook.com/fmartegutierrez/?locale=es_LA"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group flex h-12 w-12 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-400 transition-all hover:scale-110 hover:border-[#0794ff] hover:bg-[#0794ff] hover:text-white hover:shadow-lg hover:shadow-blue-500/20"
+      >
+        <Facebook />
+      </a>
+      <a
+        href="https://www.instagram.com/drmarteg/?hl=en"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group flex h-12 w-12 items-center justify-center rounded-full border border-slate-700 bg-slate-800 text-slate-400 transition-all hover:scale-110 hover:border-transparent hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-500 hover:text-white hover:shadow-lg"
+      >
+        <Instagram />
+      </a>
+    </div>
+
+<div
+  id="btn-back-up"
+  class="fixed right-6 bottom-6 z-50 translate-y-10 scale-90 transform cursor-pointer rounded-full bg-blue-700 p-4 text-white opacity-0 shadow-lg transition-all duration-300 ease-in-out hover:scale-100 hover:bg-blue-600"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" class="size-4 text-white" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 13a1 1 0 0 0-1-1H5.061a1 1 0 0 1-.75-1.811l6.836-6.835a1.207 1.207 0 0 1 1.707 0l6.835 6.835a1 1 0 0 1-.75 1.811H16a1 1 0 0 0-1 1v6a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z"/></svg>
+</div>
+
+    <WhatsApp
+      title="Dr. Franklin Marte"
+      phone="8099062094"
+      message="Saludos, conocí los servicios del Dr. Franklin Marte a través de su página web y me gustaría agendar una consulta para evaluación de dolor articular."
+    />
+
+    <div
+      class="flex flex-col items-center justify-center gap-10 border-t border-slate-800 pt-10 md:flex-row"
+    >
+      <div
+        class="flex items-center gap-8 opacity-50 grayscale transition-all duration-500 hover:grayscale-0"
+      >
+        <a
+          href="https://www.caribemedia.com.do"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition-transform hover:scale-110"
+        >
+          <img
+            src="/caribe.png"
+            alt="Logo Caribe Media"
+            class="h-10 w-auto object-contain"
+            onerror="this.style.display='none'"
+          />
+        </a>
+        <a
+          href="https://paginasamarillas.com.do/es/business/search/republica-dominicana/r/dr-franklin-marte"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="transition-transform hover:scale-110"
+        >
+          <img
+            src="/amarillas.webp"
+            alt="Logo Paginas Amarillas"
+            class="h-10 w-auto object-contain"
+            onerror="this.style.display='none'"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-root">
+    <div
+      id="popup"
+      class="fixed right-5 bottom-5 z-50 hidden w-[350px] items-center justify-center rounded-2xl border border-slate-700 bg-gradient-to-tr from-slate-800 via-slate-900 to-[#0f172a] p-2 shadow-2xl"
+    >
+      <button
+        id="close-btn"
+        class="absolute -top-3 -right-3 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-slate-200 bg-white text-slate-500 shadow-xl transition-transform hover:scale-110 hover:text-slate-800"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          ><line x1="18" y1="6" x2="6" y2="18"></line><line
+            x1="6"
+            y1="6"
+            x2="18"
+            y2="18"></line></svg
+        >
+      </button>
+      <div class="w-full space-y-4 rounded-xl bg-white p-7 text-left">
+        <h3 class="text-xl font-bold text-slate-800">🍪 Política de Cookies</h3>
+        <p class="text-sm leading-relaxed text-slate-600">
+          Utilizamos cookies para mejorar tu experiencia en nuestro sitio web.
+          Estas nos ayudan a entender cómo usas nuestro sitio y a personalizar
+          el contenido.
+        </p>
+        <div
+          class="space-y-2 rounded-lg border border-slate-100 bg-slate-50 p-3 text-xs text-slate-500"
+        >
+          <p><strong>Esenciales:</strong> Funcionamiento básico.</p>
+          <p><strong>Analíticas:</strong> Mejoran el rendimiento.</p>
+          <p><strong>Marketing:</strong> Contenido personalizado.</p>
+        </div>
+        <button
+          id="action-btn"
+          class="from-primary min-h-[44px] w-full cursor-pointer rounded-xl bg-linear-to-r to-blue-600 font-bold text-white shadow-md transition-transform hover:scale-[1.02]"
+        >
+          Aceptar todas
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import {
+      animate,
+      inView,
+      stagger,
+    } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
+
+    // --- Lógica del Popup de Cookies (Original) ---
+    const popup = document.getElementById("popup");
+    const closeBtn = document.getElementById("close-btn");
+    const actionBtn = document.getElementById("action-btn");
+    let showPopUp = false;
+
+    setTimeout(() => {
+      showPopUp = true;
+      popup.classList.remove("hidden");
+      animate(
+        popup,
+        { opacity: [0, 1], y: [20, 0], scale: [0.9, 1] },
+        { duration: 0.4, ease: "easeOut" },
+      );
+    }, 1000);
+
+    closeBtn.addEventListener("click", () => {
+      popup.classList.add("hidden");
+      showPopUp = false;
+      if (typeof window.cookieConsentReject === "function") {
+        window.cookieConsentReject();
+      }
+    });
+
+    actionBtn.addEventListener("click", () => {
+      popup.classList.add("hidden");
+      showPopUp = false;
+      if (typeof window.cookieConsentAccept === "function") {
+        window.cookieConsentAccept();
+      }
+    });
+
+    // --- NUEVO: Lógica de animaciones de Scroll (Dinamismo estilo Sodomfi) ---
+
+    // 1. Animaciones individuales (Fade Up, Left, Right)
+    document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+      inView(
+        el,
+        (info) => {
+          const animationType = el.getAttribute("data-animation");
+          el.classList.remove("opacity-0-init"); // Removemos clase estática
+
+          let keyframes = { opacity: [0, 1] };
+          if (animationType === "fade-up") keyframes.y = [40, 0];
+          if (animationType === "fade-left") keyframes.x = [40, 0];
+          if (animationType === "fade-right") keyframes.x = [-40, 0];
+
+          animate(info.target, keyframes, {
+            duration: 0.7,
+            easing: "ease-out",
+          });
+        },
+        { margin: "-50px 0px" },
+      );
+    });
+
+    // 2. Animaciones en cascada (Stagger) para grids de tarjetas y beneficios
+    document.querySelectorAll(".stagger-section").forEach((section) => {
+      inView(
+        section,
+        (info) => {
+          const items = info.target.children;
+          // Remover clase de opacidad inicial a los hijos
+          Array.from(items).forEach((item) =>
+            item.classList.remove("opacity-0-init"),
+          );
+
+          animate(
+            items,
+            { opacity: [0, 1], y: [30, 0] },
+            { delay: stagger(0.15), duration: 0.6, easing: "ease-out" },
+          );
+        },
+        { margin: "-50px 0px" },
+      );
+    });
+  </script>
+</footer>

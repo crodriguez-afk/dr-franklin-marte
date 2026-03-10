@@ -1,0 +1,72 @@
+---
+import Facebook from "@/components/icons/Facebook.astro";
+import Instagram from "@/components/icons/Instagram.astro";
+
+---
+<div class="bg-[#0794ff] text-white py-2 hidden sm:block">
+  <div class="container-custom flex justify-between items-center text-[12px] font-medium">
+    <div class="flex gap-6">
+      <span class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        Santo Domingo - La Vega - Santiago 
+      </span>
+    </div>
+    <div class="flex items-center gap-4">
+     <a href="	https://www.facebook.com/fmartegutierrez/?locale=es_LA" target="_blank" class="block w-5 h-5 transition-transform hover:scale-110">
+        <Facebook />
+      </a>
+      <a href="https://www.instagram.com/drmarteg/?hl=en" target="_blank" class="block w-5 h-5 transition-transform hover:scale-110">
+        <Instagram />
+      </a>
+    </div>
+  </div>
+</div>
+
+<header
+  class="sticky top-0 z-50 border-b border-gray-100/50 bg-white/80 shadow-sm backdrop-blur-xl transition-all duration-300"
+>
+  <div class="container-custom flex h-20 items-center justify-between">
+    <a href="/" class="group flex items-center gap-3">
+      <div
+        class="flex h-12 w-12 items-center justify-center rounded-xl bg-linear-to-br from-blue-50 to-blue-100 shadow-inner transition-transform duration-300 group-hover:scale-105"
+      >
+        <img src="./icon1-01.svg" alt="Logo Doctor" class="icon-blue h-7 w-7" />
+      </div>
+      <div class="flex flex-col">
+        <span
+          class="text-xl leading-none font-extrabold tracking-tight text-slate-800 transition-colors group-hover:text-[#0794ff]"
+          >Dr. Franklin Marte</span
+        >
+        <span
+          class="text-[10px] font-bold tracking-[0.2em] text-[#0794ff] uppercase"
+          >Ortopeda Especialista</span
+        >
+      </div>
+    </a>
+    <nav class="hidden items-center gap-8 md:flex">
+      <a
+        href="#tratamientos"
+        class="relative text-sm font-semibold text-slate-600 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#0794ff] after:transition-all after:duration-300 after:content-[''] hover:text-[#0794ff] hover:after:w-full"
+        >Tratamientos</a
+      >
+      <a
+        href="#doctor"
+        class="relative text-sm font-semibold text-slate-600 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#0794ff] after:transition-all after:duration-300 after:content-[''] hover:text-[#0794ff] hover:after:w-full"
+        >El Doctor</a
+      >
+      <a
+        href="#ubicaciones"
+        class="relative text-sm font-semibold text-slate-600 transition-colors after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#0794ff] after:transition-all after:duration-300 after:content-[''] hover:text-[#0794ff] hover:after:w-full"
+        >Ubicaciones</a
+      >
+      <a
+        href="https://api.whatsapp.com/send/?phone=18099062094&text&type=phone_number&app_absent=0" target="_blank"
+        class="btn-primary rounded-full bg-gradient-to-r from-[#0794ff] to-blue-500 px-6 py-2.5 text-sm font-bold text-white transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-blue-500/30"
+        >Agenda tu Consulta</a
+      >
+    </nav>
+  </div>
+</header>

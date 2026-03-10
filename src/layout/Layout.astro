@@ -1,0 +1,126 @@
+---
+import { ClientRouter } from "astro:transitions";
+import GTMConsent from "../components/GTMConsent.astro";
+import "../styles/global.css";
+
+---
+
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Regeneración Articular sin Cirugía | Dr. Franklin Marte Ortopeda
+    </title>
+    <meta
+      name="description"
+      content="Tratamientos de regeneración articular sin cirugía para dolor de rodilla, hombro y columna."
+    />
+    <meta
+      name="keywords"
+      content="dr Franklin Marte Gutierrez, Regeneraciones Articulares de hombros, Regeneraciones, Articulares de rodillas, Dolor de columna, Ozonoterapia, dolor de rodilla"
+    />
+    <meta name="author" content="Dr. Franklin Marte" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://drfranklinmartegutierrez.com.do/" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://drfranklinmartegutierrez.com.do/"
+    />
+    <meta
+      property="og:title"
+      content="Regeneración Articular sin Cirugía | Dr. Franklin Marte Ortopeda"
+    />
+    <meta
+      property="og:description"
+      content="Tratamientos de regeneración articular sin cirugía para dolor de rodilla, hombro y columna. PRP y factores de crecimiento con el Dr. Franklin Marte. Agenda tu consulta."
+    />
+    <meta
+      property="og:image"
+      content="https://drfranklinmartegutierrez.com.do/imagen1.JPG"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_DO" />
+    <meta property="og:site_name" content="Dr. Franklin Marte" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Regeneración Articular sin Cirugía | Dr. Franklin Marte Ortopeda"
+    />
+    <meta
+      name="twitter:description"
+      content="Tratamientos de regeneración articular sin cirugía para dolor de rodilla, hombro y columna. PRP y factores de crecimiento con el Dr. Franklin Marte. Agenda tu consulta."
+    />
+    <meta
+      name="twitter:image"
+      content="https://drfranklinmartegutierrez.com.do/imagen1.JPG"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB27T902DL"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-QB27T902DL");
+    </script>
+
+    <ClientRouter />
+    <GTMConsent gtmId="GTM-TN49WM9Q" />
+  </head>
+  <body
+    class="selection:bg-primary overflow-x-hidden bg-[#f8fafc] font-sans text-[#1e293b] antialiased selection:text-white"
+  >
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  /* Estilo para asegurar que los iconos SVG locales tengan el color deseado #0794ff */
+  .icon-blue {
+    filter: invert(48%) sepia(89%) saturate(2831%) hue-rotate(188deg)
+      brightness(101%) contrast(106%);
+  }
+  .icon-white {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(106deg)
+      brightness(105%) contrast(104%);
+  }
+
+  /* Animaciones personalizadas adicionales */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Clases ocultas iniciales para el JS de Motion */
+  .opacity-0-init {
+    opacity: 0;
+  }
+</style>
